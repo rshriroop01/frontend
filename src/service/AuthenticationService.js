@@ -31,7 +31,7 @@ class AuthenticationService {
     */ 
   static async login(dealer) {
     try {
-      const response = await axios.post('http://localhost:8085/pms/api/login', dealer);
+      const response = await axios.post('http://localhost:8085/loanEzz/api/login', dealer);
       console.log('SAPI response:', response.data +"Hello"+response.data.success); 
       if (response.data === true) {
         // Call the setSessionAttribute method to store the session token or user info
@@ -48,7 +48,7 @@ class AuthenticationService {
 
   static async registerDealer(dealer) {
     try {
-      const response = await axios.post('http://localhost:8085/pms/api/register', dealer); // Adjust the API endpoint
+      const response = await axios.post('http://localhost:8085/LoanEzz/api/register', dealer); // Adjust the API endpoint
       return response.data;
     } catch (error) {
       console.error('Registration error', error);

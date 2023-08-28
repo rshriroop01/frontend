@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  
 }
 
 .App-logo {
@@ -35,4 +36,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-container{
+  width: 50%;
+  margin: auto;
+  padding: auto;
+}
+
+form label{
+  font-weight:bold;
+}
+
+
+.navbar {
+  background-color: white;
+}
+
+.card-img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
